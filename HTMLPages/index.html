@@ -32,7 +32,8 @@
     background: linear-gradient(blue, pink);
     width:100%;
     height:100vh;
-        
+    position: fixed;
+     z-index: -10;     
     }
     
         
@@ -65,9 +66,7 @@
     height: 70px;
     animation-delay: 3s;
         
-    }
-    
-    
+    }   
     .circle3{
      left:70%;
     width: 60px;
@@ -233,6 +232,7 @@ text-decoration: none;
          font-family: "Anton", sans-serif;
         color:white;
         font-size:55px;
+       
         
          }
          
@@ -261,22 +261,10 @@ text-decoration: none;
        
          }
          
-         .hello-text{
-          animation-name: move-text;
-        animation-duration: 4s;   
-         }
-       
-       
-       @keyframes move-text{
-           0%{
-           left:0px;    
-           }
+        
+     
            
-           100%{
-           left:100px;    
-           }
-           
-       }
+       
          
          
          .navimg{
@@ -301,7 +289,25 @@ text-decoration: none;
        
   
          
-     }
+      .hello-text{
+         animation-name: move-text;
+        animation-duration:4s; 
+         
+         }
+         
+               
+       @keyframes move-text{
+           0%{
+           margin:-550px    
+           }
+           
+           100%{
+           margin:0px;   
+           }    
+             
+             
+             }
+       
    
      
 
@@ -486,7 +492,7 @@ text-decoration: none;
 <div class="navbar">
     
     
-        HTML <img class="navimg" src=html5.png> <img class="navimg" src=gimp.png>GIMP  
+        HTML<img class="navimg" src=html5.png> <img class="navimg" src=gimp.png>GIMP  
   
     
 </div>
