@@ -12,6 +12,143 @@
      <style> 
          
          
+  *{
+     margin: 0;
+    padding:0;   
+    }
+    
+    
+    .circles-container{
+     width:100%;
+    height: 100%;:
+    pointer-events:absolute;
+    overflow:hidden;
+    top:0;
+    left:0;
+    }
+    
+    .main-container{
+    background-color: 0;
+    background: linear-gradient(blue, pink);
+    width:100%;
+    height:100vh;
+        
+    }
+    
+        
+        
+        li{   
+    position: absolute;
+    display: block;
+    list-style: none;
+    width:20px;
+    height: 20px;
+    background-color: whitesmoke;
+    bottom:-150px;
+    animation-name:bubble;
+    animation-duration: 25s;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;   
+    }
+    
+    
+    .circle1{
+     left:10%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 2s;    
+    }
+     .circle2{
+     left:90%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 3s;
+        
+    }
+    
+    
+    .circle3{
+     left:70%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 4s;
+        
+    }
+    .circle4{
+     left:40%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 5s;
+        
+    }
+    .circle5{
+     left:20%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 6s;
+        
+    }
+    .circle6{
+     left:50%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 7s;
+        
+    }
+    .circle7{
+     left:30%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 8s;
+        
+    }
+    .circle8{
+     left:60%;
+    width: 65px;
+    height: 65px;
+    animation-delay: 9s;
+        
+    }
+    .circle9{
+     left:80%;
+    width: 55px;
+    height: 55px;
+    animation-delay: 10s;
+        
+    }
+
+
+
+.main-container{
+    position: fixed;
+    z-index:-10;
+}
+
+
+
+
+  @keyframes bubble{
+    
+            0%{
+                transform: translateY(0)
+                rotate(0deg);
+                opacity:0.8;
+                border-radius: 0;
+                
+        }
+            
+            100%{
+                 transform: translateY(-1000px)
+                rotate(720deg);
+                opacity:0;
+                border-radius:100%;
+            
+            }    
+      
+}
+         
+         
          
     
     .content-card{
@@ -338,10 +475,8 @@ text-decoration: none;
 </div>  
     
 <nav>
-    
- <a href="#HTML/CSS">HTML/CSS</a>
-<a href="#GIMP">GIMP</a>
-   
+  
+
     
     
     
@@ -351,7 +486,7 @@ text-decoration: none;
 <div class="navbar">
     
     
-        <a id=HTML/CSS>HTML</a> <img class="navimg" src=html5.png> <img class="navimg" src=gimp.png> <a id= GIMP>GIMP</a>   
+        HTML <img class="navimg" src=html5.png> <img class="navimg" src=gimp.png>GIMP  
   
     
 </div>
