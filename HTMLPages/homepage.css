@@ -1,6 +1,8 @@
 .content-card{
     width:300px;
-    margin:left;
-    margin:right;
+    margin-right:50px;
+    margin-left:50px;
     padding: inherit;
+    align-self:left; 
+    background-color: gray;
 }
