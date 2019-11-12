@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serene Varughese</title>
+
+    <style>
+        .grass {
+            background-color: #DEFDE0
+        }
+
+        .fire {
+            background-color: #FDDFDF
+        }
+
+        .electric {
+            background-color: #FCF7DE
+        }
+
+        .water {
+            background-color: #DEF3FD
+        }
+
+        .ground {
+            background-color: #f4e7da
+        }
+
+        .rock {
+            background-color: #d5d5d4
+        }
+
+        .poison {
+            background-color: #b19cd9
+        }
+
+        .bug {
+            background-color: #f8d5a3
+        }
+
+        .dragon {
+            background-color: #97b3e6
+        }
+
+        .psychic {
+            background-color: #eaeda1
+        }
+
+        .flying {
+            background-color: #F5F5F5
+        }
+
+        .fighting {
+            background-color: #E6E0D4
+        }
+
+        .normal {
+            background-color: #F5f5f5
+        }
+
+        .ice {
+            background-color: #66CCFF
+        }
+
+        .pokemon-card {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-left: 10px;
+            margin-top: 10px;
+            height: 180px;
+            width: 120px;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 5%
+        }
+
+        .img-container {
+            background-color: rgba(255, 255, 255, 0.6);
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+
+        .name {
+            font-size: 15px;
+            font-weight: bold;
+
+        }
+
+        .number {
+            font-size: 5px;
+            background-color: rgba(0, 0, 0, 0.1);
+            padding: 5px 10px 5px 10px;
+            border-radius: 75%;
+            align-items: center;
+        }
+
+        .type {
+            font-size: 5px;
+
+
+        }
+
+        img {
+            width: 110px;
+            height: 110px;
+            padding: 8px
+        }
+        
+        .card-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        body > div{
+            margin: auto;
+            width:400px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+          
+        }
+        
+        ::placeholder{
+            color:white;
+        }
+        
+        #searchInput{
+            width:300px;
+            padding:10px 5px 10px 5px;
+            border:none;
+            background-color:rgba(0,0,0,0.2);
+            color:white;
+            font-family:'roboto';
+            font-size:15px;
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+            
+        }
+        
+        h1{
+            text-align: center;
+            color:white;
+            margin-left:50px
+        }
+        
+        
+        #grad {
+  background-image: linear-gradient(to right, deeppink , orange);
+}
+    
+    </style>
+    
+    <script>
+    
+   function filterResults(){
+       let inputElement = document.getElementById("searchInput");
+       let searchValue = inputElement.value.toUpperCase();
+       
+       let pokemon = document.getElementsByClassName("pokemon-card");
+       
+       
+       for (i = 0; i< pokemon.length; i++){
+           let pokeText= pokemon[i].textContent;
+           if (pokeText.toUpperCase(). indexOf(searchValue) > -1){
+               pokemon[i].style.display="";
+               }
+            else{
+               pokemon[i].style.display = "none";
+               }
+           
+       }
+   } 
+    </script>
+    
+</head>
+
+<body id=grad>
+    <h1>Pokemon Search</h1>
+    <div> <input type="text" id="searchInput" onkeyup="filterResults()" placeholder="Search for pokemon name or type"> </div> 
+        <section>
+<div class=card-container> 
+        <div class="pokemon-card grass">
+            <div class=img-container> <img src=1-bulbasaur-grass.png> </div>
+            <div class=number>#001</div>
+            <div class=name>Bulbasaur</div>
+            <div class=type> Type:grass</div>
+
+        </div>
+
+        <div class="pokemon-card flying">
+            <div class=img-container> <img src=21-spearow-flying.png> </div>
+            <div class=number>#021</div>
+            <div class=name>Spearow</div>
+            <div class=type> Type:flying</div>
+
+        </div>
+
+        <div class="pokemon-card poison">
+            <div class=img-container> <img src=32-nidoranM-poison.png> </div>
+            <div class=number>#032</div>
+            <div class=name>Nidoran</div>
+            <div class=type> Type:poison</div>
+
+        </div>
+
+        <div class="pokemon-card fire">
+            <div class=img-container> <img src=4-charmander-fire.png> </div>
+            <div class=number>#004</div>
+            <div class=name>Charmander</div>
+            <div class=type> Type:fire</div>
+
+        </div>
+
+        <div class="pokemon-card water">
+            <div class=img-container> <img src=7-squirtle-water.png> </div>
+            <div class=number>#007</div>
+            <div class=name>Squirtle</div>
+            <div class=type> Type:water</div>
+
+        </div>
+
+        <div class="pokemon-card electric">
+            <div class=img-container> <img src=81-magnemite-electric.png> </div>
+            <div class=number>#081</div>
+            <div class=name>Magnemite</div>
+            <div class=type> Type:electric</div>
+
+        </div>
+
+        <div class="pokemon-card dragon">
+            <div class=img-container> <img src=148-dragonair-dragon.png> </div>
+            <div class=number>#148</div>
+            <div class=name>Dragonair</div>
+            <div class=type> Type:dragon</div>
+
+        </div>
+
+        <div class="pokemon-card bug">
+            <div class=img-container> <img src=10-caterpie-bug.png> </div>
+            <div class=number>#010</div>
+            <div class=name>Caterpie</div>
+            <div class=type> Type:bug</div>
+
+        </div>
+
+        <div class="pokemon-card ground">
+            <div class=img-container> <img src=105-marowak-ground.png> </div>
+            <div class=number>#001</div>
+            <div class=name>Marowak</div>
+            <div class=type> Type:ground</div>
+
+        </div>
+
+        <div class="pokemon-card fighting">
+            <div class=img-container> <img src=107-hitmonchan-fighting.png> </div>
+            <div class=number>#107</div>
+            <div class=name>Hitmonchan</div>
+            <div class=type> Type:fighting</div>
+
+        </div>
+
+        <div class="pokemon-card ice">
+            <div class=img-container> <img src=124-jynx-ice.png> </div>
+            <div class=number>#124</div>
+            <div class=name>Jynx</div>
+            <div class=type> Type:ice</div>
+        </div>
+
+
+        <div class="pokemon-card rock">
+            <div class=img-container> <img src=142-aerodactyl-rock.png> </div>
+            <div class=number>#142</div>
+            <div class=name>Aerodactyl</div>
+            <div class=type> Type:rock</div>
+
+        </div>
+        <div class="pokemon-card psychic">
+            <div class=img-container> <img src=122-mrMime-psychic.png> </div>
+            <div class=number>#122</div>
+            <div class=name>MrMime</div>
+            <div class=type> Type:psychic</div>
+
+        </div>
+        <div class="pokemon-card normal">
+            <div class=img-container> <img src=113-chancey-normal.png> </div>
+            <div class=number>#113</div>
+            <div class=name>Chancey</div>
+            <div class=type> Type:normal</div>
+
+        </div>
+        </div>
+
+        </section>
+</body>
+
+</html>
