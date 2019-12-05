@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Serene Varughese</title>
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #525252;
+        }
+
+        .board {
+            margin: auto;
+            width: 1000px;
+            height: 1000px;
+            background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+            display: grid;
+            grid-template-rows: repeat(8, 1fr);
+            grid-template-columns: repeat(8, 1fr);
+        }
+
+        .dark {
+            background: black;
+
+        }
+
+        .square {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+
+        .l-pawn {
+            background-image: url(l-pawn.svg)
+        }
+
+        .peices {
+            height: 110px;
+            margin-left: 25px;
+            margin-top: 10px;
+
+
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <section class="board">
+        <!-row 1->
+            <div class="square dark"> <img class=peices src=l-rook.svg></div>
+            <div class="square"> <img class=peices src=l-knight.svg></div>
+            <div class="square dark"> <img class=peices src=l-bishop.svg></div>
+            <div class="square"> <img class=peices src=l-king.svg></div>
+            <div class="square dark"> <img class=peices src=l-queen.svg></div>
+            <div class="square "> <img class=peices src=l-bishop.svg></div>
+            <div class="square dark"><img class=peices src=l-knight.svg></div>
+            <div class="square"> <img class=peices src=l-rook.svg></div>
+
+            <!-row 2->
+                <div class="square"> <img class=peices src=l-pawn.svg></div>
+                <div class="square dark"> <img class=peices src=l-pawn.svg></div>
+                <div class="square"> <img class=peices src=l-pawn.svg></div>
+                <div class="square dark"> <img class=peices src=l-pawn.svg></div>
+                <div class="square"> <img class=peices src=l-pawn.svg></div>
+                <div class="square dark "> <img class=peices src=l-pawn.svg></div>
+                <div class="square"> <img class=peices src=l-pawn.svg></div>
+                <div class="square dark "> <img class=peices src=l-pawn.svg></div>
+
+                <!-row 3->
+                    <div class="square dark"></div>
+                    <div class="square"></div>
+                    <div class="square dark"></div>
+                    <div class="square"></div>
+                    <div class="square dark"></div>
+                    <div class="square  "></div>
+                    <div class="square dark"></div>
+                    <div class="square"></div>
+
+                    <!-row 4->
+                        <div class="square"></div>
+                        <div class="square dark"></div>
+                        <div class="square"></div>
+                        <div class="square dark"></div>
+                        <div class="square"></div>
+                        <div class="square dark "></div>
+                        <div class="square"></div>
+                        <div class="square dark "></div>
+
+                        <!-row 5->
+                            <div class="square dark"></div>
+                            <div class="square"></div>
+                            <div class="square dark"></div>
+                            <div class="square"></div>
+                            <div class="square dark"></div>
+                            <div class="square  "></div>
+                            <div class="square dark"></div>
+                            <div class="square"></div>
+
+                            <!-row 6->
+                                <div class="square"></div>
+                                <div class="square dark"></div>
+                                <div class="square"></div>
+                                <div class="square dark"></div>
+                                <div class="square"></div>
+                                <div class="square dark "></div>
+                                <div class="square"></div>
+                                <div class="square dark "></div>
+
+                                <!-row 7->
+                                    <div class="square dark"><img class=peices src=d-pawn.svg> </div>
+                                    <div class="square"> <img class=peices src=d-pawn.svg></div>
+                                    <div class="square dark"> <img class=peices src=d-pawn.svg></div>
+                                    <div class="square"> <img class=peices src=d-pawn.svg></div>
+                                    <div class="square dark"> <img class=peices src=d-pawn.svg></div>
+                                    <div class="square"> <img class=peices src=d-pawn.svg></div>
+                                    <div class="square dark"> <img class=peices src=d-pawn.svg></div>
+                                    <div class="square"> <img class=peices src=d-pawn.svg></div>
+
+
+                                    <!-row 8->
+                                        <div class="square "> <img class=peices src=d-rook.svg></div>
+                                        <div class="square dark"> <img class=peices src=d-knight.svg></div>
+                                        <div class="square "> <img class=peices src=d-bishop.svg></div>
+                                        <div class="square dark"> <img class=peices src=d-king.svg></div>
+                                        <div class="square "> <img class=peices src=d-queen.svg></div>
+                                        <div class="square dark "> <img class=peices src=d-bishop.svg></div>
+                                        <div class="square "><img class=peices src=d-knight.svg></div>
+                                        <div class="square dark"> <img class=peices src=d-rook.svg></div>
+    </section>
+</body></html>
