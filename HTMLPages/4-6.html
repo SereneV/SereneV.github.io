@@ -7,15 +7,15 @@
   <style> 
   *{
     margin:0;
-    padding:1000;
+    padding:0;
     }  
       
       #calendar-grid{
-          font-family: 'Lilita One', cursive;
+          font-family: 'Liltia One', cursive;
           width:100%;
           display:grid;
           grid-template-columns: repeat(7, 1fr);
-          grid-template-columns: repeat(6, 250px);
+          grid-template-rows: repeat(6, 250px);
           grid-gap:1px;
           grid-template-areas: "m m m m m m d1"
                                 "d2 d3 d4 d5 d6 d7 d8"
@@ -46,6 +46,7 @@
           margin: 15px;
           font-size: 25px;
           text-transform: uppercase;
+          font-weight:1000;
       }
       
       .red{
